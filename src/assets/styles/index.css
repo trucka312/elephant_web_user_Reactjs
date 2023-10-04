@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.inventory-product .ant-table-expanded-row .ant-table-cell {
+  padding: 0px !important;
+}
+
+/* Thay đổi màu chữ của input ant khi disable*/  
+.ant-input:disabled,
+.ant-input-disabled {
+  color: #777777; 
+}
+
+.ant-input:disabled, 
+.ant-input-disabled {
+  background-color: #f2f2f2;
+  border: 1px solid #e7e7e7;
+  font-weight: 500;
+}

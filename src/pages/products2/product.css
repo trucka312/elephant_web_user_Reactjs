@@ -1,0 +1,7 @@
+.description-detail-product img{
+    max-width: 500px;
+}
+
+.ant-pagination-options {
+  display: none!important;
+}

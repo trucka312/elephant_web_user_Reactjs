@@ -1,0 +1,24 @@
+auto build
+
+git checkout son
+git pull
+git checkout dev
+git merge son
+git add .
+git commit -m "Merge huy"
+git push
+npm run build
+
+rm -rf ../hihihi_user_web_v2_build/*
+mv ./dist/* ../hihihi_user_web_v2_build/
+cd ../hihihi_user_web_v2_build
+git add .
+git commit -m "New"
+git push -f
+cd ../hihihi_user_web_v2
+
+cd /www/wwwroot/banhang-dev.hihihi.vn
+git pull
+
+cd /www/wwwroot/myiki.vn
+git pull
